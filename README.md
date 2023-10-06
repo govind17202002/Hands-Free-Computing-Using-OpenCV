@@ -55,4 +55,4 @@ clocy = plocy + (index_y - plocy) /smoothening
 
 ### <h2>With this signing off..!!,BHARATH GUNTREDDI ..🤞</h2>
 
-<video controls autplay muted src="Demonstration.mp4" />
+<video controls autoplay muted src="./demonstration.mp4" />
