@@ -53,6 +53,15 @@ clocy = plocy + (index_y - plocy) /smoothening
 
 <h3>If any necessary commits are required to increase the elegance of this repo! i'm always open for a PR.</h3>
 
-### <h2>With this signing off..!!,BHARATH GUNTREDDI ..🤞</h2>
+### <h2>With this signing off..!!, GOVIND AGARWAL ..🤞</h2>
 
-<video controls autoplay muted src="./demonstration.mp4" />
+<!--<video controls autoplay muted src="./demonstration.mp4" />-->
+
+
+
+
+
+https://github.com/govindag-606/Gesture-controlled-CURSOR/assets/111557368/153babd0-0fbd-424e-a096-7ad1022ada83
+
+
+
