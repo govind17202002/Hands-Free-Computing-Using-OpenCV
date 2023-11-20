@@ -1,67 +1,71 @@
-<h1 align=center>Hand-Controlled-AI-Virtual-Mouse 🖱️👆</h1>
-<h2 align=center>Version : 1.0.0.1</h2>
-<!--This is an AI based Virtual Mouse controlled by our hand gestures and hand detection.-->
+<h1 align=center>Hand-Free-Computing-with-OpenCV 🖱️👆</h1>
+<h2>This is an AI based Mouse system that perform all mouse operations by hand gestures.</h2>
 
 <img src="https://user-images.githubusercontent.com/95229816/185941431-83ba8fc6-0863-4a9b-a8ef-9908a29bd9ba.png">
 
 <u><h2>The mouse is the one of the wonderfull inventions of the Human Computer Interaction(HCI) Technology.</h2></u>
-<h3>Currently we are using wired or may be wireless mouses,In real time cases some computers may not support for a physical mouse or may some users may be dealth with some hand problems or handicap and cannot use physical mouse, so this Hand controlled AI Virtual Mouse can be used to overcome this problem. Making a user to control the mouse by reducing the computer human interaction.</h3>
+<h4>-> Currently we are using wired or may be wireless mouses.</h3>
+<h4>-> But in real time cases some computers may not support for a physical mouse, some users may be dealth with some disability.</h3>
+<h4>-> So this Hand controlled AI Virtual Mouse can be used to overcome this problem.</h3>
+<h4>-> Making a user to control the mouse by reducing the computer human interaction.</h3>
 
-<h1>FUNCTIONALITIES:</h1>
-<h4> -> This was built using the openCV-python and mediapipe for Detecting and processing the image and mediapipe an open source cross-platform developed by google for media processing and ready-to-use ML solutions for computer vision tasks.</h4>
-<h4> -> Our Hand Controlled Virtual mouse can able to move the mouse anywhere on the screen and can able to perform the click operation.</h4>
-<h4> -> Our Index finger can be used to move the mouse over the screen.</h4>
-<h4> -> When Our Index finger and Thumb come close to each other or touch each other then it performs the click operation.</h4>
-<h4> -> And the PyautoGUI for programmatically control the mouse and keyboard.</h4>
+<H1></H1>
 
+<h2>FUNCTIONALITIES:</h2>
+<h4>This project provides a hands-free alternative for computer interaction. </h4>
+<h4>The virtual mouse supports various functionalities such as 
+  <h4>>➡️ scrolling</h4>
+  <h4>>➡️ left and right-clicking </h4>
+  <h4>>➡️ hovering</h4>
+  <h4>>➡️ drag-and-drop.</h4>
+  <h4>>➡️ volume up-and-down</h4>
 
-<h2>Now coming to the code part </h2>
+</h4>
+
+<H1></H1>
+<h2>LIBRARIES: </h2>
 The Libraries that need to be installed are written in the requirements.txt file
 
 ```text
-opencv-python - 4.6.0.66
-numpy - 1.23.1
-matplotlib - 3.5.2
-mediapipe - 0.8.10.1
+opencv-python - 4.8.0.76
+numpy - 1.24.3
+mediapipe - 0.10.0
 pyautogui - 0.9.53
-pillow - 9.2.0
+autopy - 4.0.0
 ```
 
 ### Install the following necessary pip
 ```sh
 pip install opencv-python
 pip install numpy
-pip install matplotlib
 pip install mediapipe
 pip install PyautoGUI
-pip install PIL
+pip install autopy
 ```
 
-### The actual working of the mouse is based on the Hand Landmarks which can be viewed and controlled by opencv and mediapipe.
-### Our hand contains a total of 21 landmarks.
-![hand_landmarks](https://user-images.githubusercontent.com/95229816/186465439-9253c685-9561-474d-aa79-5e5baa874256.png)
+<H1></H1>
+<H2>WORKING: </H2>
+  <h3>The actual working of the mouse is based on the Hand Landmarks which can be viewed and controlled by opencv and mediapipe.</h3>
+  <h3>Our hand contains a total of 21 landmarks.</h3>
+
+![image](https://github.com/govindag-606/Hands-Free-Computing-with-OpenCV/assets/111557368/0f960284-e40b-46a1-bb39-3ce32a0df199)
+
+  
+<h3>Based on distance between these landmarks, status of fingers as to whether it is closed or open is collected.</h3>
+<H2></H2>
+
+<h3>Different combinations of finger-tips tiggers various mouse operations. They are as follows: </h3>
+
+![image](https://github.com/govindag-606/Hands-Free-Computing-with-OpenCV/assets/111557368/f3596570-32cc-4e8f-a92d-c43b6e69953d)
+
+<H1></H1>
 
 <h1>Checkout the Demo Below : 👇</h1>
-<h4>At First The mouse pointer movement is very bad and horrible to see so, I have added a **smoothening** factor that makes the mouse pointer move like a feather. </h4>
 
-```python
-smoothening = 9
-clocx = plocx + (index_x - plocx) /smoothening
-clocy = plocy + (index_y - plocy) /smoothening
-# you can multiply or divide with the smotthening
-```
+https://github.com/govindag-606/Gesture-controlled-CURSOR/assets/111557368/153babd0-0fbd-424e-a096-7ad1022ada83
 
 <h3>If any necessary commits are required to increase the elegance of this repo! i'm always open for a PR.</h3>
 
-### <h2>With this signing off..!!, GOVIND AGARWAL ..🤞</h2>
-
-<!--<video controls autoplay muted src="./demonstration.mp4" />-->
-
-
-
-
-
-https://github.com/govindag-606/Gesture-controlled-CURSOR/assets/111557368/153babd0-0fbd-424e-a096-7ad1022ada83
 
 
 
