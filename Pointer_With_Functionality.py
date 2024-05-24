@@ -7,6 +7,7 @@ import Cursor_Pointer
 
 
 
+
 def main():
 
     capture = cv.VideoCapture(0)
@@ -37,22 +38,32 @@ def main():
             detector.configElements(image, lmList)
 
             x, y = lmList[8][1:]
-
-            if f_status[2] and f_status[3] and f_status[4] and (not f_status[1]):
+        #  switch tabs
+            if f_status[2] and f_status[3] and f_status[4] and f_status[1]:
+                with pgi.hold('alt'):
+                    pgi.press('tab')
+                time.sleep(0.25)
+        # scroll down
+            elif f_status[2] and f_status[3] and f_status[4]:
                 pgi.scroll(500)
                 time.sleep(0.45)
+        # scroll up
             elif f_status[1] and f_status[2] and f_status[3]:
                 pgi.scroll(-500)
                 time.sleep(0.45)
+        # right click
             elif f_status[1] and f_status[2] and not (f_status[0] or f_status[4]):
                 pgi.rightClick()
                 time.sleep(0.2)
+        # drag drop
             elif f_status[1] and f_status[4] and (not f_status[0]):
                 pgi.mouseDown()
                 time.sleep(0.25)
+        # left click command
             elif f_status[1] and f_status[0]:
                 pgi.click()
                 time.sleep(0.25)
+        # voice command
             elif f_status[1]:
                 X = np.interp(x, (frameR, width - frameR), (0, screen_width))
                 Y = np.interp(y, (frameR, height - frameR), (0, screen_height))
@@ -61,6 +72,7 @@ def main():
                 curr_Y = prev_Y + (Y - prev_Y)/smooth
                 autopy.mouse.move(curr_X, curr_Y)
                 prev_X, prev_Y = curr_X, curr_Y
+        # voice command
             elif f_status[0] and f_status[4]:
                 with pgi.hold('win'):
                     pgi.press('h')
